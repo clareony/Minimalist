@@ -1,0 +1,70 @@
+body{
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+header{
+    text-align: center;
+    padding: 2rem 2rem;
+}
+header h1{
+    font-size: 1rem;
+    color: blue;
+}
+header p{
+    color: rgb(13, 218, 245);
+}
+.moodboard{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1px));
+    gap: 1rem;
+    padding: 2rem;
+    max-width: 1100px;
+    margin: auto;
+
+}
+.card{
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-5px);
+    color: yellow;
+}
+.card img{
+    display: block;
+
+}
+.card.quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: hsl(340, 88%, 73%);
+    padding: 20px;
+    background: hsl(0, 2%, 68%);
+}
+.card.color{
+    height: 200px;
+    border-radius: 12px;
+
+}
+.class.quote{
+    display: flex;
+    align-items: baseline;
+    align-content: end;
+    justify-content: right;
+    font-size: 2em;
+    font-style: italic;
+    color: hsl(300, 88%, 54%);
+    padding: 10px;
+    transform: scaleY();
+
+}
